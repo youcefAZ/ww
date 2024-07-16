@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>bw.mc-anotherappname</artifactId>
+	<packaging>bwmodule</packaging>
+
+	<parent>
+		<groupId>com.fastcube.tibco.Infra.APP6.ww</groupId>
+		<artifactId>maven.mc-anotherappname.parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../maven.mc-anotherappname.parent</relativePath>
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.tibco.plugins</groupId>
+			<artifactId>com.tibco.bw.palette.shared</artifactId>
+			<version>6.1.100</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fastcube.esb.framework</groupId>
+			<artifactId>bw.core_common.xpath</artifactId>
+			<version>1.1.0</version>
+			<type>bwmodule</type>
+		</dependency>
+		<dependency>
+			<groupId>com.fastcube.esb.framework</groupId>
+			<artifactId>bw.core_common.sharedmodule</artifactId>
+			<version>1.1.0</version>
+			<type>bwmodule</type>
+		</dependency>
+	</dependencies>
+</project>
