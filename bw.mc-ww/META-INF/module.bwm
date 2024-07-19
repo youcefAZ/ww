@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><sca:composite xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:SoapMsgHeader="http://www.tibcopsg.com/ESB/framework/messaging/wsdl/SoapMsgHeader" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:taskcodemciservicenameesbwsdl="http://com.fastcube.tibco.APP6.APP6/mc-ww/mc/object/taskCodeMCI-serviceName-esb/wsdl" xmlns:taskcodemciservicenameesbxsd="http://com.fastcube.tibco.APP6.APP6/mc-ww/mc/object/taskCodeMCI-serviceName-esb/xsd" xmlns:wsdl="http://com.fastcube.tibco.APP6.APP6/mc-ww/mc/object/taskCodeMCI-serviceName-esb/wsdl" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd="http://com.fastcube.tibco.APP6.APP6/mc-ww/mc/object/taskCodeMCI-serviceName-esb/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" compositeext:formatVersion="2" compositeext:version="1.0.0" name="bw.mc-ww" targetNamespace="http://tns.tibco.com/bw/composite/bw.mc-ww" xmi:id="_-kQQQFf4Eeero-GAS8tWTg" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><sca:composite xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:SoapMsgHeader="http://www.tibcopsg.com/ESB/framework/messaging/wsdl/SoapMsgHeader" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:restMsgHeader="http://www.tibco.com/ESB/framework/messaging/wsdl/restMsgHeader" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:servicenamewsdl="http://com.fastcube.tibco.APP6.APP6/mc-ww/mc/object/taskCodeMCI-serviceName-esb/wsdl" xmlns:servicenamexsd="http://com.fastcube.tibco.APP6.APP6/mc-ww/mc/object/taskCodeMCI-serviceName-esb/xsd" xmlns:taskcodemciservicenameesbwsdl="http://com.fastcube.tibco.APP6.APP6/mc-ww/mc/object/taskCodeMCI-serviceName-esb/wsdl" xmlns:taskcodemciservicenameesbxsd="http://com.fastcube.tibco.APP6.APP6/mc-ww/mc/object/taskCodeMCI-serviceName-esb/xsd" xmlns:wsdl="http://com.fastcube.tibco.APP6.APP6/mc-ww/mc/object/taskCodeMCI-serviceName-esb/wsdl" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd="http://com.fastcube.tibco.APP6.APP6/mc-ww/mc/object/taskCodeMCI-serviceName-esb/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" compositeext:formatVersion="2" compositeext:version="1.0.0" name="bw.mc-ww" targetNamespace="http://tns.tibco.com/bw/composite/bw.mc-ww" xmi:id="_-kQQQFf4Eeero-GAS8tWTg" xmi:version="2.0">
   <sca:property name="BW.DEPLOYMENTUNIT.TYPE" scalable="true" type="XMLSchema:string" xmi:id="__Q-zYFf4Eeero-GAS8tWTg"/>
   <sca:property name="BW.APPNODE.NAME" scalable="true" type="XMLSchema:string" xmi:id="__RIkYFf4Eeero-GAS8tWTg"/>
   <sca:property name="BW.DEPLOYMENTUNIT.NAME" scalable="true" type="XMLSchema:string" xmi:id="__RSVYFf4Eeero-GAS8tWTg"/>
@@ -39,4 +39,72 @@
     <sca:service name="taskCodeMCI-serviceName-esb" xmi:id="_Ahrb0oJiEeefKJqfpdbXqw">
       <sca:interface.wsdl interface="http://com.fastcube.tibco.APP6.APP6/mc-ww/mc/object/taskCodeMCI-serviceName-esb/wsdl#wsdl.interface(taskCodeMCI-serviceName-esb)" scaext:wsdlLocation="../Service%20Descriptors/taskCodeMCI-serviceName-esb.wsdl" xmi:id="_Ahrb04JiEeefKJqfpdbXqw"/>
     </sca:service>
-  </sca:component></sca:composite>
+  </sca:component><sca:service name="serviceName" promote="ComponenttaskCodeMCI-serviceName-esb-in/serviceName" xmi:id="_MAP6gPbaEeej3L_IKEQS5A">
+    <sca:interface.wsdl interface="http://com.fastcube.tibco.APP6.APP6/mc-ww/mci/object/taskCodeMCI-serviceName-esbPLT#wsdl.interface(serviceName)" xmi:id="_MAsmcPbaEeej3L_IKEQS5A"/>
+    <scaext:binding basePath="/" connector="Connections.httpConnections.API.serviceName-API" docBasePath="http://localhost:7777/bw.mc-ww" docResourcePath="Resource" implementation="Service Descriptors/MC-ww.MCI.object.taskCodeMCI-serviceName-esb-in-Resource.json" name="RestService" path="/serviceName" structuredData="true" technologyVersion="2.0" xmi:id="_MFAesPbaEeej3L_IKEQS5A" xsi:type="rest:RestServiceBinding">
+      <operation httpMethod="POST" nickname="post-serviceName" operationName="post" requestStyle="array" responseStyle="array" xmi:id="_MJxC4PbaEeej3L_IKEQS5A">
+        <responseStatus dataType="string" reasonPhrase="OK" statusCode="200" xmi:id="_t9liQBcREeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Created" statusCode="201" xmi:id="_vqzSABcREeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Accepted" statusCode="202" xmi:id="_xnWeQBcREeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="No Content" statusCode="204" xmi:id="_zkW9gBcREeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Moved Permanently" statusCode="301" xmi:id="_1glZoBcREeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="See Other" statusCode="303" xmi:id="_3gFMMBcREeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Not Modified" statusCode="304" xmi:id="_5aRoABcREeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Temporary Redirect" statusCode="307" xmi:id="_7UuigBcREeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Bad Request" statusCode="400" xmi:id="_9P7D4BcREeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Unauthorized" statusCode="401" xmi:id="__LagMBcREeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Forbidden" statusCode="403" xmi:id="_BHWBYBcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Not Found" statusCode="404" xmi:id="_DDHxkBcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Not Acceptable" statusCode="406" xmi:id="_E93nABcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Conflict" statusCode="409" xmi:id="_G5fmMBcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Gone" statusCode="410" xmi:id="_I15BcBcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Precondition Failed" statusCode="412" xmi:id="_NB02YBcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Unsupported Media Type" statusCode="415" xmi:id="_O-W0gBcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Internal Server Error" statusCode="500" xmi:id="_Q4gNABcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Service Unavailable" statusCode="503" xmi:id="_S0AQYBcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Custom" statusCode="901" xmi:id="_UvN_4BcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Custom" statusCode="902" xmi:id="_WphwcBcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Custom" statusCode="903" xmi:id="_YjPEEBcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Custom" statusCode="904" xmi:id="_aiSxwBcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Custom" statusCode="905" xmi:id="_ceYrABcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Custom" statusCode="906" xmi:id="_eZJHgBcSEeihap47TUYWSA"/>
+        <responseStatus dataType="string" reasonPhrase="Custom" statusCode="907" xmi:id="_900McBr9EeiDl7BgtigWCw"/>
+        <responseStatus dataType="string" reasonPhrase="Custom" statusCode="908" xmi:id="__7K08Br9EeiDl7BgtigWCw"/>
+        <responseStatus dataType="string" reasonPhrase="Custom" statusCode="909" xmi:id="_B5I9gBr-EeiDl7BgtigWCw"/>
+        <responseStatus dataType="string" reasonPhrase="Custom" statusCode="910" xmi:id="_D2bwoBr-EeiDl7BgtigWCw"/>
+        <clientFormat>json</clientFormat>
+        <clientFormat>xml</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+        <clientRequestFormat>xml</clientRequestFormat>
+      </operation>
+      <operation httpMethod="GET" nickname="get-serviceName" operationName="get" requestStyle="element" responseStyle="array" xmi:id="_ysJ-kP91EeeMB9KtgCIWFA">
+        <responseStatus dataType="string" reasonPhrase="OK" statusCode="200" xmi:id="_Xp8-cBr-EeiDl7BgtigWCw"/>
+        <responseStatus dataType="string" reasonPhrase="Created" statusCode="201" xmi:id="_ZXYJkBr-EeiDl7BgtigWCw"/>
+        <responseStatus dataType="string" reasonPhrase="Accepted" statusCode="202" xmi:id="_bUldIBr-EeiDl7BgtigWCw"/>
+        <responseStatus dataType="string" reasonPhrase="No Content" statusCode="204" xmi:id="_dQa3sBr-EeiDl7BgtigWCw"/>
+        <responseStatus dataType="string" reasonPhrase="Moved Permanently" statusCode="301" xmi:id="_fMDd8Br-EeiDl7BgtigWCw"/>
+        <responseStatus dataType="string" reasonPhrase="See Other" statusCode="303" xmi:id="_hHa-cBr-EeiDl7BgtigWCw"/>
+        <responseStatus dataType="string" reasonPhrase="Not Modified" statusCode="304" xmi:id="_jDqosBr-EeiDl7BgtigWCw"/>
+        <responseStatus dataType="string" reasonPhrase="Temporary Redirect" statusCode="307" xmi:id="_k_cY4Br-EeiDl7BgtigWCw"/>
+        <responseStatus dataType="string" reasonPhrase="Bad Request" statusCode="400" xmi:id="_nEMe4Br-EeiDl7BgtigWCw"/>
+        <responseStatus dataType="string" reasonPhrase="Unauthorized" statusCode="401" xmi:id="_pBxl4Br-EeiDl7BgtigWCw"/>
+        <responseStatus dataType="string" reasonPhrase="Forbidden" statusCode="403" xmi:id="_q-LBIBr-EeiDl7BgtigWCw"/>
+        <responseStatus dataType="string" reasonPhrase="Not Found" statusCode="404" xmi:id="_HjtaMBsrEei5V-jmgC1G8A"/>
+        <responseStatus dataType="string" reasonPhrase="Not Acceptable" statusCode="406" xmi:id="_guMFoBsrEei5V-jmgC1G8A"/>
+        <responseStatus dataType="string" reasonPhrase="Conflict" statusCode="409" xmi:id="_irYLEBsrEei5V-jmgC1G8A"/>
+        <responseStatus dataType="string" reasonPhrase="Gone" statusCode="410" xmi:id="_km2ZQBsrEei5V-jmgC1G8A"/>
+        <responseStatus dataType="string" reasonPhrase="Precondition Failed" statusCode="412" xmi:id="_mhSFoBsrEei5V-jmgC1G8A"/>
+        <responseStatus dataType="string" reasonPhrase="Unsupported Media Type" statusCode="415" xmi:id="_ocnJ4BsrEei5V-jmgC1G8A"/>
+        <responseStatus dataType="string" reasonPhrase="Internal Server Error" statusCode="500" xmi:id="_qWrC0BsrEei5V-jmgC1G8A"/>
+        <responseStatus dataType="string" reasonPhrase="Service Unavailable" statusCode="503" xmi:id="_sQcn4BsrEei5V-jmgC1G8A"/>
+        <responseStatus dataType="string" reasonPhrase="Custom" statusCode="901" xmi:id="_uL_HgBsrEei5V-jmgC1G8A"/>
+        <responseStatus dataType="string" reasonPhrase="Custom" statusCode="902" xmi:id="_wJMbEBsrEei5V-jmgC1G8A"/>
+        <responseStatus dataType="string" reasonPhrase="Custom" statusCode="903" xmi:id="_yDdvYBsrEei5V-jmgC1G8A"/>
+        <clientFormat>json</clientFormat>
+        <clientFormat>xml</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <advancedConfig blockingQueueSize="2147483647" xmi:id="_axiTsPuhEemCy9fUH9u-6g"/>
+    </scaext:binding>
+    <scact:bindingAdjunct bindingName="RestService" xmi:id="_MJxC4fbaEeej3L_IKEQS5A"/>
+  </sca:service></sca:composite>

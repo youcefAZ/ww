@@ -1,0 +1,383 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Resource",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/serviceName" : {
+      "post" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "post-serviceName",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/definitions/serviceNameRequest",
+              "uniqueItems" : false
+            }
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a serviceNameResponse to be returned",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/serviceNameResponse",
+                "uniqueItems" : false
+              }
+            },
+            "headers" : { }
+          },
+          "901" : {
+            "description" : "Custom",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "902" : {
+            "description" : "Custom",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "903" : {
+            "description" : "Custom",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "904" : {
+            "description" : "Custom",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "201" : {
+            "description" : "Created",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "905" : {
+            "description" : "Custom",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "202" : {
+            "description" : "Accepted",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "906" : {
+            "description" : "Custom",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "907" : {
+            "description" : "Custom",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "204" : {
+            "description" : "No Content",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "908" : {
+            "description" : "Custom",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "909" : {
+            "description" : "Custom",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "910" : {
+            "description" : "Custom",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "403" : {
+            "description" : "Forbidden",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "406" : {
+            "description" : "Not Acceptable",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "409" : {
+            "description" : "Conflict",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "410" : {
+            "description" : "Gone",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "412" : {
+            "description" : "Precondition Failed",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "415" : {
+            "description" : "Unsupported Media Type",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "301" : {
+            "description" : "Moved Permanently",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "303" : {
+            "description" : "See Other",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "304" : {
+            "description" : "Not Modified",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "307" : {
+            "description" : "Temporary Redirect",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "503" : {
+            "description" : "Service Unavailable",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-serviceName",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "a serviceNameResponse to be returned",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/serviceNameResponse",
+                "uniqueItems" : false
+              }
+            },
+            "headers" : { }
+          },
+          "901" : {
+            "description" : "Custom",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "902" : {
+            "description" : "Custom",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "903" : {
+            "description" : "Custom",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "201" : {
+            "description" : "Created",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "202" : {
+            "description" : "Accepted",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "204" : {
+            "description" : "No Content",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "301" : {
+            "description" : "Moved Permanently",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "303" : {
+            "description" : "See Other",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "304" : {
+            "description" : "Not Modified",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "307" : {
+            "description" : "Temporary Redirect",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "403" : {
+            "description" : "Forbidden",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "406" : {
+            "description" : "Not Acceptable",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "503" : {
+            "description" : "Service Unavailable",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "409" : {
+            "description" : "Conflict",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "410" : {
+            "description" : "Gone",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "412" : {
+            "description" : "Precondition Failed",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "415" : {
+            "description" : "Unsupported Media Type",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "serviceNameResponse" : {
+      "type" : "object",
+      "required" : [ "out" ],
+      "properties" : {
+        "out" : {
+          "type" : "string"
+        }
+      }
+    },
+    "serviceNameRequest" : {
+      "type" : "object",
+      "required" : [ "in" ],
+      "properties" : {
+        "in" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
