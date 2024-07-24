@@ -1,9 +1,8 @@
-<?xml version = "1.0" encoding = "UTF-8"?>
-<repository xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "http://www.tibco.com/xmlns/repo/types/2002">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><repository xmlns="http://www.tibco.com/xmlns/repo/types/2002" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<globalVariables>
 		<globalVariable>
 			<name>BW.DEPLOYMENTUNIT.TYPE</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -12,7 +11,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>BW.APPNODE.NAME</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -21,7 +20,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>BW.DEPLOYMENTUNIT.NAME</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -39,7 +38,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>BW.DOMAIN.NAME</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -48,7 +47,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>BW.DEPLOYMENTUNIT.VERSION</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -57,7 +56,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>BW.APPSPACE.NAME</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -66,7 +65,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>BW.MODULE.VERSION</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -75,7 +74,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>BW.MODULE.NAME</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -91,5 +90,149 @@
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
-	</globalVariables>
+	<globalVariable>
+			<name>/Services/MC-ww/hostname</name>
+			<value>localhost</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/port</name>
+			<value>8989</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/ssss-esb-in/flowCode</name>
+			<value>rexel.ww.ssss</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/ssss-esb-in/taskCode</name>
+			<value>MCS-SOAP-17</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/ssss-esb-in/serviceName</name>
+			<value>ww.ssss.esb-in</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/organization/scope</name>
+			<value>Country ex: AT | FR | DE | etc</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/organization/orgDomain</name>
+			<value>Business domain ex: sales | customer | products | suppliers | finance | hr</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/organization/sub_domain</name>
+			<value>Details of the country's scope ex: NLN when country is N</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/organization/banner</name>
+			<value/>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/exchange/owner</name>
+			<value/>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/exchange/name</name>
+			<value>productprice</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/exchange/exchangeVersion</name>
+			<value>1.0</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/exchange/object_type</name>
+			<value>accountNumber</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/exchange/object_id</name>
+			<value>123456789</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/exchange/sourceName</name>
+			<value>SAP | CRM | WEBSHOP</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/exchange/sourceAddress</name>
+			<value/>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/exchange/destinationName</name>
+			<value>SAP | CRM | WEBSHOP</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-ww/MCI/exchange/interaction_type</name>
+			<value/>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable></globalVariables>
 </repository>

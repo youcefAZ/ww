@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://com.fastcube.tibco.Infra.APP6/mc-ww/mc/ssss/MCS-SOAP-17-serviceName-esb/xsd"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="unqualified"
+	targetNamespace="http://com.fastcube.tibco.Infra.APP6/mc-ww/mc/ssss/MCS-SOAP-17-serviceName-esb/xsd">
+	<element name="serviceNameRequest">
+		<complexType>
+			<sequence>
+				<element name="in" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+	<element name="serviceNameResponse">
+		<complexType>
+			<sequence>
+				<element name="out" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+	<element name="serviceNameFault">
+		<complexType>
+			<sequence>
+				<element name="fault" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+</schema>

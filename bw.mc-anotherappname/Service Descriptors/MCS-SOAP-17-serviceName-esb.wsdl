@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions
+	xmlns:extns="http://com.fastcube.tibco.Infra.APP6/mc-ww/mc/ssss/MCS-SOAP-17-serviceName-esb/xsd"
+	xmlns:tns="http://com.fastcube.tibco.Infra.APP6/mc-ww/mc/ssss/MCS-SOAP-17-serviceName-esb/wsdl"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	name="MCS-SOAP-17-serviceName-esb"
+	targetNamespace="http://com.fastcube.tibco.Infra.APP6/mc-ww/mc/ssss/MCS-SOAP-17-serviceName-esb/wsdl">
+	<wsdl:import
+		namespace="http://com.fastcube.tibco.Infra.APP6/mc-ww/mc/ssss/MCS-SOAP-17-serviceName-esb/xsd" />
+	<wsdl:message name="serviceNameRequest">
+		<wsdl:part element="extns:serviceNameRequest" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="serviceNameResponse">
+		<wsdl:part element="extns:serviceNameResponse" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="serviceNameFault">
+		<wsdl:part element="extns:serviceNameFault" name="parameters" />
+	</wsdl:message>
+	<wsdl:portType name="MCS-SOAP-17-serviceName-esb">
+		<wsdl:operation name="serviceName">
+			<wsdl:input message="tns:serviceNameRequest" name="serviceNameInput" />
+			<wsdl:output message="tns:serviceNameResponse" name="serviceNameOutput" />
+			<wsdl:fault message="tns:serviceNameFault" name="Fault" />
+		</wsdl:operation>
+	</wsdl:portType>
+</wsdl:definitions>
